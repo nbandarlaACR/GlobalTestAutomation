@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suites">
+    <listeners>
+        <listener class-name="utility.TestListener"/>
+    </listeners>
+
+    <!-- AILAB Related Tests -->
+    <test name="demo">
+        <classes>
+            <class name="testcases.e2e.E2E"/>
+        </classes>
+    </test>
+
+    <test name="experiment">
+        <classes>
+            <class name="testcases.e2e.E2E">
+                <methods>
+                    <include name="moon_t309"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--    <test name="smoke">-->
+<!--        <classes>-->
+<!--            <class name="testcases.smoke.ACRConnectSmokeTestBase"/>-->
+<!--            <class name="testcases.smoke.AilabSmoke"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="e2e">-->
+<!--        <classes>-->
+<!--            <class name="testcases.e2e.E2E"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; API Related Tests &ndash;&gt;-->
+<!--    <test name="apiVerification">-->
+<!--        <classes>-->
+<!--            <class name="testcases.api.ApiSmokeTest"/>-->
+<!--            <class name="testcases.api.MasterIdIndexTest"/>-->
+<!--            <class name="testcases.api.DataManagerTest"/>-->
+<!--            <class name="testcases.api.EventLoggerTest"/>-->
+<!--            <class name="testcases.api.DicomTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
+

@@ -1,0 +1,10 @@
+.idea
+target/
+reports/
+*.iml
+screenshots/
+.classpath
+.project
+*eclipse*
+.factorypath
+.vscode
